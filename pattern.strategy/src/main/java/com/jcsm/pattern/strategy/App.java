@@ -2,6 +2,7 @@ package com.jcsm.pattern.strategy;
 
 /**
  * Hello world!
+ * v1.0
  *
  */
 public class App 
