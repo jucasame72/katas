@@ -12,13 +12,18 @@ public abstract class Duck {
 		return display;
 	}
 
-	public void performFly() {
-		System.out.print("I'm flying!\n");
+	public void performQuack() {
+		System.out.print("Quack!\n");
 		
 	}
 
 	public void performSwim() {
 		System.out.print("I'm swimming!\n");
+		
+	}
+	
+	public void performFly() {
+		System.out.print("I'm flying!\n");
 		
 	}
 

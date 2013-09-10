@@ -11,12 +11,12 @@ public class App
     {
         Duck mallardDuck = new MallardDuck();
         mallardDuck.display();
-        mallardDuck.performFly();
+        mallardDuck.performQuack();
         mallardDuck.performSwim();
         
         RedheadDuck redheadDuck = new RedheadDuck();
         redheadDuck.display();
-        redheadDuck.performFly();
+        redheadDuck.performQuack();
         redheadDuck.performSwim();
     }
 }

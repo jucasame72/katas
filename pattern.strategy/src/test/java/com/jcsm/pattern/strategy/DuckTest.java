@@ -51,17 +51,17 @@ public class DuckTest {
 	}
 	
 	@Test
-	public void testDuck_shouldMallardDuckFly() {
+	public void testDuck_shouldMallardDuckQuack() {
 		MallardDuck mallardDuck = new MallardDuck();
-		mallardDuck.performFly();
-		assertEquals("I'm flying!\n", log.getLog());
+		mallardDuck.performQuack();
+		assertEquals("Quack!\n", log.getLog());
 	}
 	
 	@Test
-	public void testDuck_shouldRedheadDuckFly() {
+	public void testDuck_shouldRedheadDuckQuack() {
 		RedheadDuck redheadDuck = new RedheadDuck();
-		redheadDuck.performFly();
-		assertEquals("I'm flying!\n", log.getLog());
+		redheadDuck.performQuack();
+		assertEquals("Quack!\n", log.getLog());
 	}
 	
 	@Test
@@ -77,6 +77,59 @@ public class DuckTest {
 		redheadDuck.performSwim();
 		assertEquals("I'm swimming!\n", log.getLog());
 	}
+	
+	
+	@Test
+	public void testDuck_shouldExistRubberDuck(){
+		RubberDuck rubberDuck = new RubberDuck();
+		assertNotNull(rubberDuck);
+	}
+	
+	@Test
+	public void testDuck_shouldRubberDuckQuack(){
+		RubberDuck rubberDuck = new RubberDuck();
+		rubberDuck.performQuack();
+		assertEquals("Quack!\n", log.getLog());
+	}
+	
+	@Test
+	public void testDuck_shouldRubberDuckCanShowDisplayDescription() {
+		RubberDuck rubberDuck = new RubberDuck();
+		rubberDuck.display();
+		assertEquals("I'm a Rubber Duck!", log.getLog());
+	}
+	
+	@Test
+	public void testDuck_shouldRubberDuckSwim(){
+		RubberDuck rubberDuck = new RubberDuck();
+		rubberDuck.performSwim();
+		assertEquals("I'm swimming!\n", log.getLog());
+	}
+	
+	
+	@Test 
+	public void testDuck_shouldMallardDuckFly(){
+		MallardDuck mallardDuck = new MallardDuck();
+		mallardDuck.performFly();
+		assertEquals("I'm flying!\n", log.getLog());
+	}
+	
+	@Test
+	public void testDuck_shouldRedheadDuckFly(){
+		RedheadDuck redheadDuck = new RedheadDuck();
+		redheadDuck.performFly();
+		assertEquals("I'm flying!\n", log.getLog());
+	}
+	
+	@Test
+	public void testDuck_shouldRubberDuckFly(){
+		RubberDuck rubberDuck = new RubberDuck();
+		rubberDuck.performFly();
+		assertEquals("I can't fly!\n", log.getLog());
+	}
+	
+	
+
 	
 	
 	
